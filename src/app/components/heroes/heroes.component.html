@@ -1,0 +1,10 @@
+
+<h1> Heroes <small> Marvel y Dc</small> </h1>
+<hr>
+
+<div class="card-columns">
+    <app-personaje-tarjeta *ngFor="let heroe of heroes; let i = index"
+        [personaje]="heroe"
+        [index]="i">
+    </app-personaje-tarjeta>
+</div>
