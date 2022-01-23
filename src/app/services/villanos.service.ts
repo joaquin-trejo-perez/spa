@@ -76,9 +76,5 @@ export class VillanosService {
     }
     return villanosArr;
   }
-
-  public buscarHeroe2 = (termino: string): Personaje[] => {
-    return this.villanos.filter((heroe: Personaje) => heroe.nombre.toLocaleLowerCase().indexOf(termino) >= 0);
-  }
 }
 
